@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css" class="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Bukowski_V_Shakespeare</title>
+</head>
+<body>
+    <!-- this button that starts info to start the game -->
+    <button id='start-button' data-modal-target="#modal">Enter</button>
+<!-- This is the first modal-->
+    <div class="modal" id="modal">
+        <div class='modal-header'>
+            <div class='title'>Welcome to Bukowski Vs. Shakespeare</div>
+            <!--This closes the modal-->
+            <button data-close-button class='close-button'>&times;</button>
+        </div>
+        <div class='modal-body'>
+            <p>Charles (Hank) Bukowski & William (Billy) Shakespeare could not be more different poets. For starters, they lived about 300 years apart, Shakespeare in Elizabethan England, Bukowski in California in the mid-20th century. Two, well Shakespeare is SHAKESPEARE. Name another poet (besides Dante or Homer) that even comes close to his style or ingenuity — You can’t.</p>
+            <p>Charles Bukowski on the other hand is best known for his writings on alcohol and generally just being a gross old man. (For more information on his debauched lifestyle, just read any of his books.)</p>
+            <p>But did you know that Bukowski and Shakespeare both liked to street fight? And since we can’t watch Shakespeare and Bukowski duke it out for poetic supremacy in the 21st century, we can use the internet to have them fight it out virtually, and poetically.</p>
+        </div>
+        <div id='next-div'>
+            <button data-modal-target="#modal1" class='next-button'>Next --></button>
+        </div>
+    </div>
+
+    <div class="modal1" id="modal1">
+        <div class='modal-header1'>
+            <div class='title1'>Welcome to Bukowski Vs. Shakespeare (contd.)</div>
+            <button data-close-button1 id='close-button1'>&times;</button>
+        </div>
+        <div class='modal-body1'>
+            <p>But wait, Bukowski got too drunk and needs your help writing his poem to try and beat Shakespeare. That is where you come in.</p>
+            <p>Help Bukowski write his poem by answering questions 1-10. This will write a poem that you and Hank (mostly you) come up with. All Shakespeare is going to do is reach into his bag of Sonnets and randomly select one. Once both of these conditions are met, our referee (the editor) will select which poem he thinks is strongest. Strongest poem wins and the victor will take the top spot as The Best Poet In The Universe.</p>
+            <p>Having a stronger poem than Shakespeare means that you and Bukowski (mostly you) are now the best Poets In The Universe. Failure to complete the answers or having a weaker poem than Shakespeare will make you lose. If you win, have a great night and make sure you have a hangover cure in the waiting for the morning. If you lose, don’t come crying to me when Hank smashes up your car while blaring Liszt’s Totentanz!</p>
+            <p>Good luck and don’t forget that Hank has a tire iron in his trunk and he knows how to use it!</p>
+            <p>TO PLAY, OPEN UP YOUR CONSOLE (right click > inspect > console) and then click 'Start Game'.</p>
+            <button data-start-button id='start-btn'>Start Game</button>
+        </div>
+    </div>
+    <div id="overlay">
+    </div>
+</body>
+
+</html>

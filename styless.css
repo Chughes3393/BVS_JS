@@ -1,0 +1,131 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+*{
+    font-family: monospace;
+    background-color: whitesmoke;
+}
+
+#start-button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1 px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color:beige;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.modal-body{
+    padding: 10px 15px;
+}
+
+
+.modal1{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1 px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color:beige;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal1.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header1 {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-header1 .title1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.modal-body1 {
+    padding: 10px 15px;
+}
+
+.modal-header1 #close-button1{
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    background-color: whitesmoke;
+
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
